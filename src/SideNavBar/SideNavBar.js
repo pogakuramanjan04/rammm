@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import ReactDOM from 'react-dom';
 import { Router, Route,  browserHistory, IndexRoute } from 'react-router'
-import {Link} from 'react-router'
+import { Link } from "react-router-dom";
 import "./SideNavBar.css";
 
 const SideNavBar = () => {
@@ -10,36 +10,46 @@ const SideNavBar = () => {
 	const menuItems = [
 		{
 			text: "ASTE 527 HOME",
+			path:"home",
 			// icon: "icons/grid.svg",
 		},
 		
 		{
 			text: "ASTE 527 HOME ARCHIEVE",
+			path:"ASTE-527-HOME-ARCHIEVE",
 			// icon: "icons/user.svg",
 		},
 		{
 			text: "PRESENTATION VIDEOS",
+			path:"PRESENTATION-VIDEOS",
 			// icon: "icons/message.svg",
 		},
 		{
 			text: "ISDC 2018 SLIDES",
+			path:"ISDC-2018-SLIDES",
 			// icon: "icons/pie-chart.svg",
 		},
 		{
 			text: "ISDC 2019 SLIDES",
+			path:"ISDC-2019-SLIDES",
 			// icon: "icons/folder.svg",
 		},
 		{
 			text: "Veniece Biennale 2021",
+			path:"Veniece-Biennale-2021",
 			// icon: "icons/shopping-cart.svg",
 		},
 		{
 			text: "AIAA",
+			path:"AIAA"
 			// icon: "icons/heart.svg",
 		},
 		
 	];
 	return (
+
+    <div className="r">
+
 		<div
 			className={
 				isExpanded
@@ -69,14 +79,15 @@ const SideNavBar = () => {
 					</button>
 				</div>
 				<div className="nav-menu">
-					{menuItems.map(({ text, icon }) => (
-						<a to=""
+					{menuItems.map(({ text, icon,path }) => (
+						
+						<Link to={`${path}`}
 							className={isExpanded ? "menu-item" : "menu-item menu-item-NX"}
-							href="#"
+							
 						>
 							<img className="menu-item-icon" src={icon} alt="" srcset="" />
 							{isExpanded && <p>{text}</p>}
-						</a>
+						</Link>
 					))}
 
 
@@ -100,6 +111,10 @@ const SideNavBar = () => {
 				{/* <img className="logout-icon" src="icons/logout.svg" alt="" srcset="" /> */}
 			</div>
 		</div>
+
+    </div>
+
+
 	);
 };
 
