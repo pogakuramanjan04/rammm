@@ -11,6 +11,7 @@
 }
 .side-nav-container-NX {
 	width: 85px;
+	display:inline-block;
 }
 
 .nav-upper,
@@ -20,6 +21,7 @@
 .nav-footer {
 	/* border: 2px solid white; */
 	display: grid;
+	
 }
 
 .nav-heading {

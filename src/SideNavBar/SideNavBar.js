@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 import ReactDOM from 'react-dom';
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
+import { Router, Route,  browserHistory, IndexRoute } from 'react-router'
+import {Link} from 'react-router'
 import "./SideNavBar.css";
 
 const SideNavBar = () => {
@@ -69,7 +70,7 @@ const SideNavBar = () => {
 				</div>
 				<div className="nav-menu">
 					{menuItems.map(({ text, icon }) => (
-						<a to="/sdn/"
+						<a to=""
 							className={isExpanded ? "menu-item" : "menu-item menu-item-NX"}
 							href="#"
 						>

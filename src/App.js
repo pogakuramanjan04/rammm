@@ -8,7 +8,8 @@ function App() {
 	return (
 		<div>
 			 <BrowserRouter>
-			 <SideNavBar />
+			    <SideNavBar />
+				<h1 style={{display: "inline"}}>Hello Style!</h1>
 			 </BrowserRouter>
 			
 		</div>
