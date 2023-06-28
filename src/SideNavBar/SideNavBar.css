@@ -33,8 +33,11 @@
 	color: var(--light);
 }
 .nav-brand img {
-	width: 40px;
+	width: 100%;
 	padding: 0 10px;
+	border-radius: 50px;
+	border-color: green;
+	border-width: 20px;
 }
 
 .hamburger {
@@ -96,7 +99,7 @@
 
 .menu-item {
 	height: 57px;
-	display: flex;
+	display: inline-flex;
 	color: var(--light);
 	text-decoration: none;
 	text-transform: uppercase;
