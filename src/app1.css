@@ -12,7 +12,7 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    overflow: scroll;
+    /* overflow: scroll; */
     /* justify-content: row; */
 
 
