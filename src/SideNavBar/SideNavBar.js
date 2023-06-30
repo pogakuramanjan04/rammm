@@ -63,7 +63,7 @@ const SideNavBar = () => {
 					{/* here company logo below company logo*/}
 					{isExpanded && (
 						<div className="nav-brand">
-							<img src="https://lh6.googleusercontent.com/xScTBrtgpH7yyMiqKo8coYUSg_dFEgcpSL0Z6tHM_o7nHWrrLmcnqvSpImn4T8Ck3FzxRabRQUCBXp5wQQoHBbA=w16383" alt="" srcset="" />
+							<img src="https://res.cloudinary.com/dbie5v8ke/image/upload/v1688054331/samples/Formal_Viterbi_CardOnWhite_z5jpus.jpg" alt="" srcset="" />
 							{/* <h2>Showkart</h2> */}
 						</div>
 					)}
