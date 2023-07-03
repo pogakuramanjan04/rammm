@@ -48,23 +48,28 @@ export default function I2 () {
  
  
  
- <div className='ic1'>
+ <div className='ic1'> 
 
-
-
-
-
-    
-    
-    
-    
     
     <div>
       <h1>Sapce View</h1>
       <div style={containerStyles}>
         <ImageSlider slides={slides} />
+        
+     
+     
+
+
+
+
+
+
+
+
+
       </div>
     </div>
+    
   </div>
     )
 }
